@@ -6,13 +6,14 @@ ASSIGNMENT=$1
 DATE=$(date -I)
 
 if [[ $# -eq 0 ]] ; then
-	echo 'Name of project is required'
+	echo 'Argument required:'
+	echo 'Usage: SOME_PROJECT_NAME [Adds project name to header] | d [Deletes header]'
 	exit 0
 fi
 
 if [ $1 == "d" ] ; then
 	echo 'Deleting header - Be careful! If no header is present, the first five lines of your files will be deleted'
-	read -p "Are you sure?" -n 1 -r
+	read -p "Are you sure? (y/n)" -n 1 -r
 	echo
 	if [[ $REPLY =~ ^[Yy]$ ]]
 	then
