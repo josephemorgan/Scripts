@@ -1,0 +1,5 @@
+#!/bin/bash
+
+wpa_supplicant -D nl80211,wext -i wlp2s0 -c<(wpa_passphrase "10873" "coloma123") -B
+
+dhcpcd wlp2s0

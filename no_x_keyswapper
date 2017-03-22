@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+/usr/bin/loadkeys /home/joe/Scripts/swap_esc_capslock.kmap
+
+echo "Notice: Caps Lock and Escape keys have been switched."
