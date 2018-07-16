@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+xrandr --output DP-2 --rotate left
+feh --bg-scale --no-xinerama ~/.wallpaper.jpg
