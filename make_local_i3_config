@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+export HOST=$(cat $HOME/.hostname)
+
+cat $HOME/.dotfiles/i3/.i3/config.$HOST $HOME/.dotfiles/i3/.i3/config.base > $HOME/.i3/config
