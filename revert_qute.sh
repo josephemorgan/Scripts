@@ -2,4 +2,4 @@
 
 pkill picom
 sleep .1
-picom -f -b
+picom -f -b --experimental-backends

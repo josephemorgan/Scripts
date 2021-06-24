@@ -1,5 +1,5 @@
 #!/bin/zsh
 
-xrandr --output HDMI-0 --rotate left
-xrandr --output DP-2 --right-of HDMI-0
+xrandr --output HDMI-0
+xrandr --output DP-1 --right-of HDMI-0 --rotate right
 feh --bg-scale --no-xinerama ~/.wallpaper.jpg
